@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { NavLink } from 'react-router-dom';
+import UserCard from './Usercard';
 
 export default function Dashboard() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -72,8 +73,8 @@ export default function Dashboard() {
                         </label>
                     </div>
 
-                    <div className="user">
-                        <img src="./src/images/customer01.jpg" alt="User" />
+                    <div>
+                        <UserCard/>
                     </div>
                 </div>
 
