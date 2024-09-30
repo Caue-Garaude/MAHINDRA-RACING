@@ -35,6 +35,31 @@ O site ja havia sido criado anteriormente em https://github.com/RafaelJango/Mahi
 - Rafael Jango: RM555297
 - Rafael Bocchi: RM557603
 
+  ## Como Executar o Projeto
+
+1. **Clone o repositório**:
+   ```bash
+   git clone <https://github.com/Caue-Garaude/MAHINDRA-RACING>
+   
+2. **Navegue até o diretório do projeto**:
+ ```bash
+cd Mahindra-Racing
+```
+
+3. **Instale as dependências**:
+```bash
+npm install
+```
+
+4. **Inicie o servidor de desenvolvimento**:
+
+```bash
+npm run dev
+```
+Abra o navegador e acesse: o localhost.
+
+Agora tudo está devidamente formatado. Se precisar de mais ajustes ou informações, é só avisar!
+
 ## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE). Essa licença permite que você faça quase tudo com o projeto, desde que atribua o crédito ao autor original. Para mais detalhes, consulte o arquivo LICENSE.
