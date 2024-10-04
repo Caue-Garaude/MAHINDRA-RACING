@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Header from './Header';
+import './images/pilot1'
+import './images/pilot2'
+
 
 
 export default function Home() {
