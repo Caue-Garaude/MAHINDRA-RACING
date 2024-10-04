@@ -41,7 +41,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="content-image">
-                    <img className="mySlides" src={`src/images/pilot${slideIndex + 1}.png`} alt="slide" />
+                    <img className="mySlides" src={`./images/pilot${slideIndex + 1}.png`} alt="slide" />
                 </div>
             </div>
         </>
