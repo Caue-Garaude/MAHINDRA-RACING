@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Header from './Header';
-import './Images/Pilot1.png'
-import './Images/Pilot2.png'
+import './Images/pilot1.png'
+import './Images/pilot2.png'
 
 
 
@@ -41,7 +41,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="content-image">
-                    <img className="mySlides" src={`/src/Images/Pilot${slideIndex + 1}.png`} alt="slide" />
+                    <img className="mySlides" src={`/src/Images/pilot${slideIndex + 1}.png`} alt="slide" />
                 </div>
             </div>
         </>
