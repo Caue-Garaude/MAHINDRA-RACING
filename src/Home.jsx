@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Header from './Header';
-import './Images/pilot1.png'
-import './Images/pilot2.png'
+import './images/pilot1.png'
+import './images/pilot2.png'
 
 
 
