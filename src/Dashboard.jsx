@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { NavLink } from 'react-router-dom';
 import UserCard from './Usercard';
-import './Images/Customer01.jpg'
-import './Images/Customer02.jpg'
-import './Images/Logo1.png'
+import './images/Customer01.jpg'
+import './images/Customer02.jpg'
+import './images/Logo1.png'
 
 export default function Dashboard() {
     const [activeIndex, setActiveIndex] = useState(0);
