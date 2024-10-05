@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import './Header.css';
-import './images/logo1.png'
+import './Images/Logo1.png'
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function Header() {
         <>
             <header className="header">
                 <div className="logoheader">
-                    <NavLink to="/"><img src="./images/logo1.png" alt="" className="logo" /></NavLink>
+                    <NavLink to="/"><img src="/src/Images/Logo1.png" alt="" className="logo" /></NavLink>
                 </div>
 
                 {/* Botão de hambúrguer */}
