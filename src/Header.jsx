@@ -26,7 +26,6 @@ export default function Header() {
         const password = event.target.password.value;
 
         if (isLogin) {
-            // Verificar credenciais de login
             const storedUser = JSON.parse(localStorage.getItem('user'));
 
             if (storedUser && storedUser.email === email && storedUser.password === password) {
