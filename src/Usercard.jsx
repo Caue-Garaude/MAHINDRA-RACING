@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+const customer01 = '/images/customer01.jpg';
 
 const UserCard = () => {
     const [isCardVisible, setCardVisible] = useState(false);
@@ -20,14 +21,15 @@ const UserCard = () => {
     return (
         <div>
             <div className="user" onClick={toggleCardVisibility}>
-                <img src="./src/images/customer01.jpg" alt="User" />
+                <img src={customer01} alt="User" />
             </div>
 
             {isCardVisible && (
                 <div className="user-card">
                     <h3>User Information</h3>
                     <p>Email: {userData.email}</p>
-                    <p>Password: {userData.password}</p>
+                    {/* Remover a exibição da senha por segurança */}
+                    <p>Password: {userData.password}</p> {/* Avaliar se é seguro mostrar a senha */}
                     <button onClick={toggleCardVisibility}>Close</button>
                 </div>
             )}

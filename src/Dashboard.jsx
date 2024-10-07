@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './Dashboard.css';
 import { NavLink } from 'react-router-dom';
 import UserCard from './Usercard';
-import './images/customer01.jpg'
-import './images/customer02.jpg'
-import './images/logo1.png'
+const customer01 = '/images/customer01.jpg'
+const customer02 =  '/images/customer02.jpg'
+const logo1 = '/images/logo1.png'
 
 export default function Dashboard() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -38,7 +38,7 @@ export default function Dashboard() {
                     <li>
                         <a href="#">
                             <span className="icon">
-                                <img src="./src/images/logo1.png" className="logoicon" alt="Logo" />
+                                <img src={logo1} className="logoicon" alt="Logo" />
                             </span>
                         </a>
                     </li>
@@ -148,11 +148,11 @@ export default function Dashboard() {
 
                         <table>
                             {[
-                                { name: 'Marcus', status: 'Offline', imgSrc: './src/images/customer02.jpg' },
-                                { name: 'João', status: 'Online', imgSrc: './src/images/customer02.jpg' },
-                                { name: 'Allan', status: 'Online', imgSrc: './src/images/customer01.jpg' },
-                                { name: 'Arthur', status: 'Offline', imgSrc: './src/images/customer01.jpg' },
-                                { name: 'Gustavo', status: 'Offline', imgSrc: './src/images/customer02.jpg' },
+                                { name: 'Marcus', status: 'Offline', imgSrc: customer02 },
+                                { name: 'João', status: 'Online', imgSrc: customer02 },
+                                { name: 'Allan', status: 'Online', imgSrc: customer01 },
+                                { name: 'Arthur', status: 'Offline', imgSrc: customer01 },
+                                { name: 'Gustavo', status: 'Offline', imgSrc: customer02 },
                             ].map((friend, index) => (
                                 <tr key={index}>
                                     <td width="60px">

@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Header from './Header';
-import './images/pilot1.png'
-import './images/pilot2.png'
-
-
+const pilot1 = '/images/pilot1.png';
+const pilot2 = '/images/pilot2.png';
 
 export default function Home() {
     const [slideIndex, setSlideIndex] = useState(0);
 
-    // Efeito para mostrar os slides
+    // Efeito para alternar os slides
     useEffect(() => {
         const interval = setInterval(() => {
-            setSlideIndex((prevIndex) => (prevIndex + 1) % 2);
+            setSlideIndex((prevIndex) => (prevIndex + 1) % 2); // Alterna entre 0 e 1
         }, 2000);
 
         return () => clearInterval(interval);
     }, []);
 
+    // Array de imagens dos pilotos
+    const pilots = [pilot1, pilot2];
+
     return (
         <>
-           <Header/>
+            <Header/>
             <div className="content">
                 <div className="content-text">
                     <h1>MAHINDRA RACING NOW</h1>
@@ -41,7 +42,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="content-image">
-                    <img className="mySlides" src={`/src/Images/pilot${slideIndex + 1}.png`} alt="slide" />
+                    <img className="mySlides" src={pilots[slideIndex]} alt={`Pilot ${slideIndex + 1}`} />
                 </div>
             </div>
         </>

@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />}>
           {/* Define Home como a página inicial */}
-          <Route index element={<Header/>} element={<Home/>}/>
+          <Route index element={<Home/>}/>
           {/* Rotas para o Header */}
           <Route>
 
